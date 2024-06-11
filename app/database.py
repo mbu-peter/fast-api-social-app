@@ -5,6 +5,9 @@ from .config import settings
 
 
 SQL_ALCHEMY_DATABASE_URL = settings.DATABASE_URI
+if SQL_ALCHEMY_DATABASE_URL.startswith("postgres://"):
+    DATABASE_URI = SQL_ALCHEMY_DATABASE_URL.replace(
+        "postgres://", "postgresql://", 1)
 
 
 engine = create_engine(SQL_ALCHEMY_DATABASE_URL)
