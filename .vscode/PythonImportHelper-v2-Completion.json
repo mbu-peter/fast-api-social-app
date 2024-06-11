@@ -1,0 +1,387 @@
+[
+    {
+        "label": "create_engine",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "TIMESTAMP",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Boolean",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "declarative_base",
+        "importPath": "sqlalchemy.ext.declarative",
+        "description": "sqlalchemy.ext.declarative",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.declarative",
+        "documentation": {}
+    },
+    {
+        "label": "sessionmaker",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "psycopg2",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "psycopg2",
+        "description": "psycopg2",
+        "detail": "psycopg2",
+        "documentation": {}
+    },
+    {
+        "label": "RealDictCursor",
+        "importPath": "psycopg2.extras",
+        "description": "psycopg2.extras",
+        "isExtraImport": true,
+        "detail": "psycopg2.extras",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "text",
+        "importPath": "sqlalchemy.sql.expression",
+        "description": "sqlalchemy.sql.expression",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.sql.expression",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "EmailStr",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "get_db",
+        "kind": 2,
+        "importPath": "app.database",
+        "description": "app.database",
+        "peekOfCode": "def get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()",
+        "detail": "app.database",
+        "documentation": {}
+    },
+    {
+        "label": "SQL_ALCHEMY_DATABASE_URL",
+        "kind": 5,
+        "importPath": "app.database",
+        "description": "app.database",
+        "peekOfCode": "SQL_ALCHEMY_DATABASE_URL = 'postgresql://postgres:Karungo6234@localhost/fastapi'\nengine = create_engine(SQL_ALCHEMY_DATABASE_URL)\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()\n# Dependency\ndef get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:",
+        "detail": "app.database",
+        "documentation": {}
+    },
+    {
+        "label": "engine",
+        "kind": 5,
+        "importPath": "app.database",
+        "description": "app.database",
+        "peekOfCode": "engine = create_engine(SQL_ALCHEMY_DATABASE_URL)\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()\n# Dependency\ndef get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()",
+        "detail": "app.database",
+        "documentation": {}
+    },
+    {
+        "label": "SessionLocal",
+        "kind": 5,
+        "importPath": "app.database",
+        "description": "app.database",
+        "peekOfCode": "SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()\n# Dependency\ndef get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()",
+        "detail": "app.database",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "kind": 5,
+        "importPath": "app.database",
+        "description": "app.database",
+        "peekOfCode": "Base = declarative_base()\n# Dependency\ndef get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()",
+        "detail": "app.database",
+        "documentation": {}
+    },
+    {
+        "label": "find_post",
+        "kind": 2,
+        "importPath": "app.main",
+        "description": "app.main",
+        "peekOfCode": "def find_post(id):\n    for p in my_posts:\n        if p['id'] == id:\n            return p\ndef find_index_post(id):\n    for i, p in enumerate(my_posts):\n        if p['id'] == id:\n            return i\n@app.get(\"/\")\ndef root():",
+        "detail": "app.main",
+        "documentation": {}
+    },
+    {
+        "label": "find_index_post",
+        "kind": 2,
+        "importPath": "app.main",
+        "description": "app.main",
+        "peekOfCode": "def find_index_post(id):\n    for i, p in enumerate(my_posts):\n        if p['id'] == id:\n            return i\n@app.get(\"/\")\ndef root():\n    return {\"Message\": \"Hello World\"}\n@app.get(\"/posts\", response_model=List[schemas.Post])\ndef get_posts(db: Session = Depends(get_db)):\n    posts = db.query(models.Post).all()",
+        "detail": "app.main",
+        "documentation": {}
+    },
+    {
+        "label": "root",
+        "kind": 2,
+        "importPath": "app.main",
+        "description": "app.main",
+        "peekOfCode": "def root():\n    return {\"Message\": \"Hello World\"}\n@app.get(\"/posts\", response_model=List[schemas.Post])\ndef get_posts(db: Session = Depends(get_db)):\n    posts = db.query(models.Post).all()\n    # cursor.execute(\"\"\" SELECT * FROM posts \"\"\")\n    # posts = cursor.fetchall()\n    return posts\n@app.post(\"/posts\", status_code=status.HTTP_201_CREATED, response_model=schemas.Post)\ndef create_posts(post: schemas.PostCreate, db: Session = Depends(get_db)):",
+        "detail": "app.main",
+        "documentation": {}
+    },
+    {
+        "label": "get_posts",
+        "kind": 2,
+        "importPath": "app.main",
+        "description": "app.main",
+        "peekOfCode": "def get_posts(db: Session = Depends(get_db)):\n    posts = db.query(models.Post).all()\n    # cursor.execute(\"\"\" SELECT * FROM posts \"\"\")\n    # posts = cursor.fetchall()\n    return posts\n@app.post(\"/posts\", status_code=status.HTTP_201_CREATED, response_model=schemas.Post)\ndef create_posts(post: schemas.PostCreate, db: Session = Depends(get_db)):\n  #  cursor.execute(\"\"\" INSERT INTO posts (title, content, published) VALUES (%s, %s, %s) RETURNING * \"\"\",\n  #                 (post.title, post.content, post.published))\n    # new_post = cursor.fetchone()",
+        "detail": "app.main",
+        "documentation": {}
+    },
+    {
+        "label": "create_posts",
+        "kind": 2,
+        "importPath": "app.main",
+        "description": "app.main",
+        "peekOfCode": "def create_posts(post: schemas.PostCreate, db: Session = Depends(get_db)):\n  #  cursor.execute(\"\"\" INSERT INTO posts (title, content, published) VALUES (%s, %s, %s) RETURNING * \"\"\",\n  #                 (post.title, post.content, post.published))\n    # new_post = cursor.fetchone()\n    # conn.commit()\n    new_post = models.Post(\n        **post.model_dump())\n    db.add(new_post)\n    db.commit()\n    db.refresh(new_post)",
+        "detail": "app.main",
+        "documentation": {}
+    },
+    {
+        "label": "get_one_post",
+        "kind": 2,
+        "importPath": "app.main",
+        "description": "app.main",
+        "peekOfCode": "def get_one_post(id: int, db: Session = Depends(get_db)):\n    post = db.query(models.Post).filter(models.Post.id == id).first()\n    # cursor.execute(\"\"\" SELECT * FROM posts WHERE id=%s\"\"\", str((id)))\n    # post = cursor.fetchone()\n    if not post:\n        raise HTTPException(\n            status_code=status.HTTP_404_NOT_FOUND, detail=\"Post not Found\")\n        # response.status_code = status.HTTP_404_NOT_FOUND\n        # return {\"message\": \"Post Not Found\"}\n    return post",
+        "detail": "app.main",
+        "documentation": {}
+    },
+    {
+        "label": "delete_post",
+        "kind": 2,
+        "importPath": "app.main",
+        "description": "app.main",
+        "peekOfCode": "def delete_post(id: int, db: Session = Depends(get_db)):\n    # cursor.execute(\"\"\" DELETE FROM posts where id=%s RETURNING *\"\"\", str((id)))\n    # deleted_post = cursor.fetchone()\n    # conn.commit()\n    post = db.query(models.Post).filter(models.Post.id == id)\n    if post.first() == None:\n        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,\n                            detail=f\"Post with id {id} does not exist\")\n    post.delete(synchronize_session=False)\n    db.commit()",
+        "detail": "app.main",
+        "documentation": {}
+    },
+    {
+        "label": "update_post",
+        "kind": 2,
+        "importPath": "app.main",
+        "description": "app.main",
+        "peekOfCode": "def update_post(id: int, updated_post: schemas.PostCreate, db: Session = Depends(get_db)):\n    # cursor.execute(\"\"\" UPDATE posts SET title=%s, content=%s, published=%s WHERE id=%s RETURNING *\"\"\",\n    #                (post.title, post.content, post.published, str(id)))\n    # updated_post = cursor.fetchone()\n    # conn.commit()\n    # index = find_index_post(id)\n    post_query = db.query(models.Post).filter(models.Post.id == id)\n    post = post_query.first()\n    if post == None:\n        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,",
+        "detail": "app.main",
+        "documentation": {}
+    },
+    {
+        "label": "register",
+        "kind": 2,
+        "importPath": "app.main",
+        "description": "app.main",
+        "peekOfCode": "def register(user: schemas.RegisterUser, db: Session = Depends(get_db)):\n    new_user = models.User(**user.model_dump())\n    db.add(new_user)\n    db.commit()\n    db.refresh(new_user)\n    return new_user",
+        "detail": "app.main",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "app.main",
+        "description": "app.main",
+        "peekOfCode": "app = FastAPI()\nwhile True:\n    try:\n        conn = psycopg2.connect(host='localhost', password=\"Karungo6234\", database='fastapi', user='postgres',\n                                cursor_factory=RealDictCursor)\n        cursor = conn.cursor()\n        print('database connected successfully')\n        break\n    except Exception as error:\n        print('error connecting to database')",
+        "detail": "app.main",
+        "documentation": {}
+    },
+    {
+        "label": "my_posts",
+        "kind": 5,
+        "importPath": "app.main",
+        "description": "app.main",
+        "peekOfCode": "my_posts = [{\"title\": \"title 1\", \"content\": \"content for post 1\", \"id\": 1}, {\n    \"title\": \"mamovie\", \"content\": \"content ya number 2\", \"id\": 2}]\ndef find_post(id):\n    for p in my_posts:\n        if p['id'] == id:\n            return p\ndef find_index_post(id):\n    for i, p in enumerate(my_posts):\n        if p['id'] == id:\n            return i",
+        "detail": "app.main",
+        "documentation": {}
+    },
+    {
+        "label": "Post",
+        "kind": 6,
+        "importPath": "app.models",
+        "description": "app.models",
+        "peekOfCode": "class Post(Base):\n    __tablename__ = 'posts'\n    id = Column(Integer, primary_key=True, nullable=False)\n    title = Column(String, nullable=False)\n    content = Column(String, nullable=False)\n    published = Column(Boolean, server_default='TRUE', nullable=False)\n    created_at = Column(TIMESTAMP(timezone=True),\n                        nullable=False, server_default=text('now()'))\nclass User(Base):\n    __tablename__ = 'users'",
+        "detail": "app.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 6,
+        "importPath": "app.models",
+        "description": "app.models",
+        "peekOfCode": "class User(Base):\n    __tablename__ = 'users'\n    id = Column(Integer, primary_key=True, nullable=False)\n    email = Column(String, nullable=False, unique=True)\n    password = Column(String, nullable=False)\n    created_at = Column(TIMESTAMP(timezone=True),\n                        nullable=False, server_default=text('now()'))",
+        "detail": "app.models",
+        "documentation": {}
+    },
+    {
+        "label": "PostBase",
+        "kind": 6,
+        "importPath": "app.schemas",
+        "description": "app.schemas",
+        "peekOfCode": "class PostBase(BaseModel):\n    title: str\n    content: str\n    published: bool = True\nclass PostCreate(PostBase):\n    pass\nclass Post(PostBase):\n    id: int\n    created_at: datetime\n    class Config:",
+        "detail": "app.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "PostCreate",
+        "kind": 6,
+        "importPath": "app.schemas",
+        "description": "app.schemas",
+        "peekOfCode": "class PostCreate(PostBase):\n    pass\nclass Post(PostBase):\n    id: int\n    created_at: datetime\n    class Config:\n        from_attributes = True\nclass RegisterUser(BaseModel):\n    email: EmailStr\n    password: str",
+        "detail": "app.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "Post",
+        "kind": 6,
+        "importPath": "app.schemas",
+        "description": "app.schemas",
+        "peekOfCode": "class Post(PostBase):\n    id: int\n    created_at: datetime\n    class Config:\n        from_attributes = True\nclass RegisterUser(BaseModel):\n    email: EmailStr\n    password: str\nclass Userdetails(BaseModel):\n    id: int",
+        "detail": "app.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "RegisterUser",
+        "kind": 6,
+        "importPath": "app.schemas",
+        "description": "app.schemas",
+        "peekOfCode": "class RegisterUser(BaseModel):\n    email: EmailStr\n    password: str\nclass Userdetails(BaseModel):\n    id: int\n    email: EmailStr\n    created_at: datetime\n    class Config:\n        from_attributes = True",
+        "detail": "app.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "Userdetails",
+        "kind": 6,
+        "importPath": "app.schemas",
+        "description": "app.schemas",
+        "peekOfCode": "class Userdetails(BaseModel):\n    id: int\n    email: EmailStr\n    created_at: datetime\n    class Config:\n        from_attributes = True",
+        "detail": "app.schemas",
+        "documentation": {}
+    }
+]
