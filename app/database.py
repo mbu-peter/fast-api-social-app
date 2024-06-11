@@ -6,6 +6,7 @@ from .config import settings
 
 SQL_ALCHEMY_DATABASE_URL = settings.DATABASE_URI
 
+
 engine = create_engine(SQL_ALCHEMY_DATABASE_URL)
 
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
