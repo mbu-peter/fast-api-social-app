@@ -2,7 +2,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 from .config import settings
-from psycopg2.extras import RealDictCursor
+
 
 SQL_ALCHEMY_DATABASE_URL = settings.DATABASE_URI
 
