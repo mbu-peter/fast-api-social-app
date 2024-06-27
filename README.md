@@ -69,7 +69,8 @@ Once the server is running, you can access the interactive API documentation at:
 - **Swagger UI:** [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 - **ReDoc:** [http://127.0.0.1:8000/redoc](http://127.0.0.1:8000/redoc)
 
-This project is licensed under the MIT License.
+### Demo
 
+You can view a live demo of the API at: [https://fast-api-social-app.onrender.com](https://fast-api-social-app.onrender.com)
 ---
 
