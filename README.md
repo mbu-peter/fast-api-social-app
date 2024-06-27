@@ -73,4 +73,3 @@ This project is licensed under the MIT License.
 
 ---
 
-Feel free to update the placeholders (like `your_postgresql_database_uri` and `your_secret_key`) with your actual details. Enjoy using the API!
