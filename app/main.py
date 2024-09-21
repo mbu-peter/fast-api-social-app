@@ -32,4 +32,4 @@ app.include_router(like.router)
 
 @app.get("/")
 def root():
-    return {"Message": "Hello World"}
+    return {"Message": "Hello there, Please go to '/docs'   to view the interactive docs"}
