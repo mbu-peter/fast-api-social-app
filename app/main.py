@@ -11,7 +11,7 @@ from .routers import post, user, auth, like
 # models.Base.metadata.create_all(bind=engine)
 
 
-app = FastAPI()
+app = FastAPI(title='Social Media Api', description='a social media api with all http methods, authentication routing and searching', version="1.0.1", )
 
 origins = ["*"]
 
