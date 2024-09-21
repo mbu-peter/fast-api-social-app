@@ -4,10 +4,8 @@ from sqlalchemy.orm import sessionmaker
 from .config import settings
 
 
-SQL_ALCHEMY_DATABASE_URL = settings.DATABASE_URI
-if SQL_ALCHEMY_DATABASE_URL.startswith("postgres://"):
-    DATABASE_URI = SQL_ALCHEMY_DATABASE_URL.replace(
-        "postgres://", "postgresql://", 1)
+DATABASE_URI = settings.DATABASE_URI
+
 
 
 engine = create_engine(DATABASE_URI)
